@@ -22,7 +22,7 @@ def classify():
     img = Image.open('image/data.png')
     img = np.array(img)
     img = tf.image.resize(img,(256,256))
-    # img1=img[None,:,:,:]
+    img = img[:, :, :3]
     print(tf.shape(img))
     yhat = model.predict(np.expand_dims(img/255,0))
     print(yhat)
@@ -32,7 +32,7 @@ def classify():
         message = """This means that the model detect a sign of blurriness in your cornea. It is recommended to consult to a doctor for further action to be taken. """
     else:
         classified_result = "Normal"
-        message = """Make sure you keep your eyes healthy by not overly restraining it, gets proper nutrition, and gets enough sleep regularly. """
+        message = """Make sure you keep your eyes healthy and having less chance of getting cataract by gets proper nutrition, avoid smoking, not consuming alcohol, and gets sleep regularly. """
 
     
     return ({"result" : classified_result,

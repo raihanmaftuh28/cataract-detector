@@ -66,17 +66,17 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <div className="py-[5rem] mr-[8rem] ml-[8rem] space-y-5">
-        <div className="font-outfit text-6xl font-bold text-center">
+      <div className="py-[3rem] mr-[8rem] ml-[8rem] space-y-3">
+        <div className="font-outfit text-5xl font-bold text-center">
           Cataract Classifier
         </div>
-        <div className="italic font-roboto text-center text-xl">
+        <div className="italic font-roboto text-center text-base">
           Using CNN based model
         </div>
       </div>
 
-      <div className="flex flex-col justify-center items-center w-fully space-y-[2rem] pb-20">
-        <div className="bg-[#2B2118] w-[455px] h-[299px]  rounded-[50px] flex justify-center ">
+      <div className="flex flex-col justify-center items-center w-fully space-y-[1rem] pb-12">
+        <div className="bg-[#2B2118] w-[420px] h-[250px]  rounded-[50px] flex justify-center ">
           {!file ? (
             <div
               className="flex justify-center hover:cursor-pointer w-full"
@@ -88,10 +88,10 @@ export default function Home() {
                 <Image
                   src={require("../../public/download.svg")}
                   alt="download image"
-                  width={144}
-                  height={144}
+                  width={130}
+                  height={130}
                 />
-                <div className="text-white text-xl">
+                <div className="text-white font-roboto text-base">
                   Add or drop your image here (only 1 image)
                 </div>
                 <input
@@ -126,7 +126,7 @@ export default function Home() {
         </div>
         <div className="font-roboto text-[#2B2118] text-xl ">{message}</div>
         <div
-          className="bg-[#2B2118] font-roboto text-white text-xl w-[7rem]  px-2 py-3 rounded-full hover:cursor-pointer hover:bg-gray-200 hover:text-[#2B2118] transition delay-100 text-center"
+          className="bg-[#2B2118] font-roboto text-white text-base w-fit  px-4 py-2 rounded-full hover:cursor-pointer hover:bg-gray-200 hover:text-[#2B2118] transition delay-100 text-center"
           onClick={submitHandler}
           href="/result"
         >

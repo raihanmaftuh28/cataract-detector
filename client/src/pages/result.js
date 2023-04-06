@@ -56,10 +56,12 @@ const result = () => {
           </Head>
           <Navbar />
           <div className="py-[2rem] mr-[8rem] ml-[8rem] space-y-5">
-            <div className="font-outfit text-6xl font-bold ">Classified</div>
+            <div className="font-outfit text-5xl font-bold ">
+              Classified result
+            </div>
           </div>
 
-          <div className="py-[5rem] mr-[8rem] ml-[12rem] space-y-5 flex">
+          <div className="py-[3rem] mr-[8rem] ml-[12rem] space-y-5 flex">
             <Image
               src={URL.createObjectURL(image)}
               alt="download image"
@@ -67,15 +69,15 @@ const result = () => {
               height={300}
               className="rounded-[50px]"
             />
-            <div className="ml-[5rem] w-[39rem] space-y-6">
-              <p className="font-outfit text-6xl font-bold">
+            <div className="ml-[5rem] w-[33rem] space-y-6">
+              <p className="font-outfit text-5xl font-bold">
                 {classified.data.result}
               </p>
-              <p className="font-robot text-xl ">{classified.data.message}</p>
+              <p className="font-robot text-base ">{classified.data.message}</p>
               <div className="pt-6">
                 <Link
                   href="/"
-                  className="bg-[#2B2118] font-roboto text-white text-xl w-fit  px-6 py-3  rounded-[30px] hover:cursor-pointer hover:bg-gray-200 hover:text-[#2B2118] transition delay-100 text-center"
+                  className="bg-[#2B2118] font-roboto text-white text-base w-fit  px-6 py-3  rounded-[30px] hover:cursor-pointer hover:bg-gray-200 hover:text-[#2B2118] transition delay-100 text-center"
                 >
                   Take another test
                 </Link>

@@ -2,8 +2,8 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <div className="bg-[#2B2118] py-9">
-      <div className="mr-[8rem] ml-[8rem] text-white text-xl font-roboto grid grid-cols-8">
+    <div className="bg-[#2B2118] py-7">
+      <div className="mr-[8rem] ml-[8rem] text-white text-base font-roboto grid grid-cols-8">
         <div className="space-y-3 col-span-6">
           <p>
             Created by{" "}
@@ -12,7 +12,7 @@ const Footer = () => {
           <p>Yogyakarta, April 2023</p>
         </div>
         <div className="space-y-3">
-          <p>Follow Me</p>
+          <p>Get in touch</p>
           <div className="flex space-x-4">
             <a href="https://www.instagram.com/raihan_maftuhf/">
               <Image
