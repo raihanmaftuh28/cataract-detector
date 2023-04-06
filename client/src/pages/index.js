@@ -53,7 +53,7 @@ export default function Home() {
 
       push("/result");
     } else {
-      setMessage("No file to be send, please upload a file first");
+      setMessage("No file to be send, please upload a file first!");
     }
   };
 
@@ -124,7 +124,7 @@ export default function Home() {
             </div>
           )}
         </div>
-        <div className="font-roboto text-[#2B2118] text-xl ">{message}</div>
+        <div className="font-roboto text-red-500 text-sm ">{message}</div>
         <div
           className="bg-[#2B2118] font-roboto text-white text-base w-fit  px-4 py-2 rounded-full hover:cursor-pointer hover:bg-gray-200 hover:text-[#2B2118] transition delay-100 text-center"
           onClick={submitHandler}
